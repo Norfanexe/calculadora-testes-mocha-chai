@@ -49,7 +49,7 @@ Este projeto é ideal para:
 
 ---
 
-# 🧰 Guia de Instalação: JavaScript, Mocha, Chai e NYC no seu PC
+# 🧰 Guia de Instalação: JavaScript, Mocha e Chai no seu PC
 
 ### 1️⃣ Instalar o Node.js
 
@@ -66,8 +66,8 @@ Caso node ou npm não estejam disponíveis no seu terminal:
 Você pode clonar o repositório original ou criar uma pasta nova:
 
 ```bash
-git clone xxxxxxxxxxxxxxxxxxxxxxxxxx
-cd xxxxxxxxxxxxxxxxxxx
+git clone https://github.com/Norfanexe/calculadora-testes-mocha-chai.git
+cd calculadora-testes-mocha-chai
 ```
 
 Ou, se preferir começar do zero:
