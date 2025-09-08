@@ -1,11 +1,13 @@
 {
   "type": "module",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "npx mocha test/*.js",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@eslint/js": "^9.35.0",
     "chai": "^6.0.1",
+    "eslint": "^9.35.0",
     "mocha": "^11.7.2"
   }
 }
-
