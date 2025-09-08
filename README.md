@@ -1,4 +1,4 @@
-# 🧮 Calculadora Inteligente em JavaScript
+# 🧮 Calculadora em JavaScript para Testes com Mocha e Chai
 
 ![Node.js Version](https://img.shields.io/badge/Node.js-v18.17.0-green)
 ![Mocha Tests](https://img.shields.io/badge/tests-passing-brightgreen)
