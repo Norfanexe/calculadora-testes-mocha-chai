@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "test": "mocha test/*.js",
+    "test": "npx mocha test/*.js",
     "lint": "eslint ."
   },
   "devDependencies": {
