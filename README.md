@@ -213,3 +213,59 @@ npm run dev          # (Se configurado) Inicia ambiente de desenvolvimento
 npm run lint         # (Se configurado) Verifica padrões de código
 npm run build        # (Se configurado) Gera versão de produção
 ```
+---
+
+## 🧹 O que é o ESLint?
+
+**ESLint** é um linter para JavaScript: uma ferramenta que “lê” seu código e verifica se ele segue um conjunto de regras.  
+Ajuda a manter o código limpo, padronizado e fácil de manter, mesmo em projetos com várias pessoas.  
+Pode ser configurado com regras próprias ou usar estilos populares como Airbnb, Standard ou Prettier.
+
+### ✅ Benefícios de usar ESLint
+
+- **Evita bugs silenciosos:** como esquecer um `return`, usar variáveis não declaradas ou funções mal escritas.
+- **Padroniza o estilo:** todos os arquivos seguem o mesmo padrão de indentação, espaçamento, aspas etc.
+- **Melhora a legibilidade:** facilita a leitura e revisão do código por você ou por outras pessoas.
+- **Integra com editores:** como VS Code, que mostra os erros em tempo real enquanto digita.
+
+---
+
+### 🛠️ Como adicionar ESLint ao seu projeto
+
+Se quiser seguir com isso, aqui vai o passo a passo básico:
+
+```bash
+npm install --save-dev eslint
+npx eslint --init
+```
+
+Você vai responder algumas perguntas para finalizar a configuração:
+
+- Tipo de projeto (ES Modules, Node, etc.)
+- Estilo de código (Airbnb, Standard, personalizado)
+- Se quer que o ESLint corrija automaticamente (`eslint --fix`)
+
+Depois disso, ele cria um arquivo `eslint.config.js` com as regras, e você pode rodar:
+
+```bash
+npx eslint src/
+```
+Ou:
+```bash
+npx eslint src/ --fix
+```
+Para corrigir automaticamente os problemas encontrados.
+
+De acordo com o projeto que realizar, pode configurar as regras do config.js de acordo com o que for o apropriado para seu projeto.
+
+---
+
+### 🐞 Sessão de Bugs e Problemas com ESLint que enfrentei
+
+Durante a instalação e configuração do ESLint, alguns problemas foram encontrados e resolvidos:
+
+**1️⃣ Erro: Plugin @eslint/js não encontrado**
+
+- **Mensagem:** `TypeError: Plugin "" not found.`
+- **Causa:** O plugin `@eslint/js` foi referenciado como se fosse um plugin tradicional, mas na verdade é um preset. isso  ocorre quando é feito a instação padrão sem formatar.
+- **Solução:** Remover `plugins: { js }` e usar `...js.configs.recommended` no `eslint.config.js`.
